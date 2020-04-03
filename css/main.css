@@ -1,0 +1,233 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.container {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 2px;
+  background-color: white;
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+
+.main {
+  width: 800px;
+  height: fit-content;
+  margin: 200px auto;
+  display: block;
+  position: relative;
+}
+
+.title {
+  width: fit-content;
+  margin: 0px auto;
+}
+
+.main h1 {
+  font-family: BeauSans;
+  font-size: 90px;
+  font-weight: 100;
+  color: rgb(167, 148, 148);
+}
+
+.input {
+  width: fit-content;
+  margin: 40px auto;
+  margin-bottom: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#main-input {
+  width: 600px;
+  margin: 0px auto;
+  height: 50px;
+  border: none;
+  font-family: BeauSans;
+  font-size: 22px;
+  font-weight: 100;
+  text-align: center;
+  font-style: italic;
+}
+
+input:focus {
+  outline: none;
+}
+
+.todolist {
+  width: 600px;
+  height: fit-content;
+  margin: 0px auto;
+}
+
+.todolist li {
+  box-shadow: 0 -1px 0px rgba(0,0,0, 0.2);
+}
+
+.todo {
+  height: 45px;
+}
+
+.toggle-all {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  margin: 7px 10px;
+  cursor: pointer;
+}
+
+.toggle-all:before {
+  content: '❯';
+  font-size: 22px;
+  color: #e6e6e6;
+}
+
+.toggle-all:checked:before {
+  color: #737373;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .toggle-all {
+    background: none;
+  }
+
+
+  .toggle-all {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
+
+.todo img {
+  width: 13px;
+  margin-top: 8px;
+  margin-left: 5px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.5;
+  cursor: all-scroll;
+}
+
+.todo h4 {
+  display: inline-block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: Rostelecom;
+  font-weight: 100;
+  font-size: 22px;
+  color: rgb(78, 78, 78);
+}
+
+.cross {
+  text-decoration: line-through;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  opacity: 0.5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  opacity: 0.5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  opacity: 0.5;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  opacity: 0.5;
+}
+
+.delete {
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: 500px;
+  color: red;
+  opacity: 0.1;
+  font-size: 45px;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+.todo:hover .delete:hover {
+  opacity: 1;
+}
+
+.todo:hover .delete {
+  opacity: 0.4;
+}
+
+.footer {
+  position: absolute;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  height: 40px;
+  min-width: 600px;
+  background-color: white;
+  box-shadow: 0px -1px 7px rgba(0,0,0,0.35);
+}
+
+.footer h5 {
+  font-family: Rostelecom;
+  font-size: 15px;
+  font-weight: 100;
+  color: gray;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 18px;
+}
+
+.buttons {
+  width: 45%;
+  height: fit-content;
+  margin: 8px auto;
+}
+
+.sort {
+  width: fit-content;
+  display: inline-block;
+  position: relative;
+  color: gray;
+  padding: 4px;
+  border-color: #c1c1c1;
+  font-family: Rostelecom;
+  font-size: 15px;
+  font-weight: 100;
+  margin-left: 11px;
+  cursor: pointer;
+}
+
+.border {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.sort-active {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.remover {
+  display: inline-block;
+  width: fit-content;
+  position: absolute;
+  margin-top: -4.5%;
+  margin-left: 75%;
+  color: #f60757;
+  font-family: Rostelecom;
+  font-size: 15px;
+  cursor: pointer;
+}

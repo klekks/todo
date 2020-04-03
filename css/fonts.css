@@ -1,0 +1,29 @@
+@font-face {
+   font-family: Fudd;
+   src: url(fonts/Fudd.ttf);
+  }
+
+@font-face {
+   font-family: StSev;
+   src: url(fonts/StSev.ttf);
+  }
+
+@font-face {
+   font-family: NewsCycle;
+   src: url(fonts/NewsCycle.ttf);
+  }
+
+@font-face {
+   font-family: BeauSans;
+   src: url(fonts/BeauSans.ttf);
+  }
+
+@font-face {
+   font-family: Rostelecom;
+   src: url(fonts/Rostelecom.otf);
+  }
+
+@font-face {
+   font-family: Forward;
+   src: url(fonts/Forward.otf);
+  }

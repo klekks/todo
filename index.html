@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/checkbox.css" />
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="title">
+        <h1>todos</h1>
+      </div>
+      <div class="container">
+        <div class="input">
+          <input type="checkbox" class="toggle-all"/>
+          <input type="text" placeholder="Write your todos here and press Enter" id = "main-input"/>
+        </div>
+
+        <div class="todolist">
+          <ul class="collection"></ul>
+        </div>
+        <div class="footer">
+          <h5></h5>
+          <div class="buttons">
+              <div class="sort all">All</div>
+              <div class="sort active">Active</div>
+              <div class="sort done">Completed</div>
+          </div>
+          <div class="remover">Delete completed</div>
+        </div>
+      </div>
+      <div class="infobar"></div>
+    </div>
+    <script type="text/javascript" src="js/Sortable.min.js"></script>
+    <script type="text/javascript" src="js/todo.js"></script>
+  </body>
+</html>
